@@ -78,7 +78,7 @@ def generate_distinct_colors(num_colors):
     colors.append((0,255,0))
     return colors
 
-def viewAnswer(matrix, paths):
+def viewMaze(matrix, paths):
     # Colour all white
     for j in range(matrix.shape[0]):
         for i in range(matrix.shape[1]):
@@ -88,7 +88,7 @@ def viewAnswer(matrix, paths):
     matrix[0][0] = len(paths) + 1   
     matrix[matrix.shape[0]-1][matrix.shape[1]-1] = len(paths) + 1  
 
-def viewMaze(matrix, paths):
+def viewAnswer(matrix, paths):
     # Colour each path
     for j in range(matrix.shape[0]):
         for i in range(matrix.shape[1]):
